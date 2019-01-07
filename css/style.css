@@ -1,0 +1,53 @@
+/* Red color for paragraph font
+
+ p, img[src] {
+  color: red;
+  width: 200px;
+  border: 1px solid black;
+}
+*/
+
+/*Editing font size and position */
+  html{
+    font-size: 10px;
+    font-family: 'Charm', cursive;
+  }
+
+  h1{
+    font-size: 60px;
+    text-align: center;
+  }
+
+  p, li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+/*Editing page color*/
+html {
+  background-color: #00539F;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto; /*first value: top and bottom, second value: left and right*/
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px; /*top, right, bottom, left*/
+  border: 1px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+  /*Horizontal offset of shadow, Ver offset, blur radius, color
+  positive - right, negative, left*/
+}
+
+img {
+  width:  400px;
+  display: block;
+  margin: 0 auto;
+}
