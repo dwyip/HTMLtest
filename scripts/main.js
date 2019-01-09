@@ -30,7 +30,7 @@ function setUserName(){
   localStorage.setItem('name', myName);
   myHeading.textContent = 'Mozza is yum, ' + myName;
 }
-
+// sdhfjshdfjsdhfsk
 //CHeck if name data exist, else prompt user for name
 if(!localStorage.getItem('name')) {
   setUserName();
