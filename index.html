@@ -1,25 +1,44 @@
+
+<!-- Getting Started Tutorial-->
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"> <!-- setting primary language to english -->
   <head>
     <meta charset="utf-8">
-    <title>My test page</title> <!-- what displays on the tab name-->
+    <!-- adding meta author and description -->
+    <meta name="author" content="Deanna Ip">
+    <meta name="description:" content="This website is for learning and testing.">
+
+    <title>Dede&#39;s page</title> <!-- what displays on the tab name-->
 
     <!-- CSS files go HERE -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <!-- Font Types -->
-    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+
+    <!-- adding small image beside title name -->
+    <link rel="shortcut icon" href="images/googicon.png">
 
   </head>
   <body>
+    <ul>
+      <li>
+      <a href="picture.html"
+      title="Click for surprise!!!"
+      target="_blank"
+      >Pictures</a>
+      </li>
+    </ul>
     <!-- headings -->
     <h1>My main title</h1>
-    <h2>My top level heading</h2>
-    <h3>My subheading</h3>
+    <p>this goes under the title.</p>
+    <h2>Made You LOOK 호</h2>
+    <h3 id="subbie">My subheading</h3>
     <h4>My sub-subheading</h4>
     <!-- alt describes the image-->
     <img src="images/samoyed.jpg" alt="doggos">
-    <p>My <strong>doggos</strong> are so kawaii</p>
+    <p>My <strong>doggos</strong> are so kawaii</p> <!-- emphasize word -->
 
     <!-- ol is ordered list (1,2,3). ul is undordered (bullet pts) -->
     <ol>
@@ -29,14 +48,132 @@
     </ol>
 
     <!-- insert links -->
+    <!-- title is name when hovered over -->
+    <!-- target blank opens in new tab-->
+    <!-- IMAGES can also be hyperlinked -->
     <p>This is crazy but i'm gonna insert a link here.
-    <a href="https://vsco.co/deeannnaa">Dede United</a>
+    <a href="https://vsco.co/deeannnaa"
+    title="The Mozilla homepage"
+    target="_blank"
+    >Dede United</a>
     you know you wanna click it.</p>
 
+    <a href="https://vsco.co/deeannnaa/media/5c0df67dc2b7b118d2e46cb3"
+    title="Pizza Daddy"
+    target="_blank">
+      <img src="images/seniores.png" alt="pizza daddy">
+    </a>
+
     <button>Change user</button> <!-- creates clicky button -->
+
+    <!-- inline element. em = emphasis when spoken-->
+    <p><em>first</em><em>second</em><em>third</em></p>
+
+    <p>fourth</p><p>fifth</p><p>sixth</p>
+
+    <!-- Class attribute (hidden from appearing)-->
+    <p class = "editor-note">My grumpy kitty.</p>
+
+    <!-- Disabled attribute (Boolean) -->
+    <input type="text" disabled>
+
+    <!-- Using quotation in sentence -->
+    <p>This way isn&#39;t, it is defs the correct way.</p>
+
+    <!-- Special characters -->
+    <p> I think you&#39;re kinda cute &lt;3 </p>
+
+    <!-- setting subsetions to recognize diff lang -->
+    <p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
+
+    <!-- <i> italic, <b> bold, <u> underline -->
+    <p>
+    <i>Mcdonalds</i> is <b>VERY</b> bad for <u>YOU.</u>
+    </p>
+
+    <!-- TO GO UP A DIRECTORY (FOLDER) USE .. -->
+
+    <!-- Referencing document fragment to ex: heading-->
+    <!-- Can reference own document or a separate html file -->
+    <p>The <a href="#subbie">header file</a> can be found here. </p>
+
+    <!-- Absolute URL = entire protocal, domain name underline
+    Relative URL = if in same folder (or website) -->
+
+    <!-- "Download" attribute -->
+    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+      download="firefox-latest-64bit-installer.exe">
+      Download Latest Firefox for Windows (64-bit) (English, US)
+    </a>
+
+    <!-- EMAIL LINKS -->
+    <p>
+      <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+      Send mail with cc, bcc, subject and body
+      </a>
+    </p>
+
+    <!-- Description Lists -->
+    <dl>
+      <dt>Big Mac</dt>
+      <dd>Lettuce, Tomato, 3 Buns</dd>
+      <dt>Chicken Nugget</dt>
+      <dd>4 piece, 6 piece, 10 piece, 20 piece!!!</dd>
+      <dt>McGriddle</dt>
+      <dd>heavenly calories</dd>
+
+    </dl>
+
+    <!-- Bloackquotes. Quoted from somewhere else
+    with auto indented paragraph -->
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+      Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+    </blockquote>
+
+    <!-- Inline quotations, short quotes using CITE. Italicized links -->
+    <p>The quote
+      <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">elemental</q> elements</p>
+    <p> Confusing quotes by <a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>KungFu Confucius.</cite> </a> </p>
+
+    <!-- Abbreviations -->
+    <p>We can use <abbr title="Deanna Wing Yan Ip">dwyip</abbr> to shorten my name.</p>
+
+    <!-- Markup Contact Details -->
+    <address>
+    <p>Deanna Ip, Calgary, Canada</p>
+    </address>
+
+    <!-- Superscript/Subscript -->
+    <p>The day for today is 8<sup>th</sup> Jan 2019.
+    Chemical formula is C<sub>8</sub>H<sub>10</sub>.</p>
+
+    <!-- Computer Code
+    <code> for computer <code>
+    <pre> for retaining whitespace
+    <var> for variable names
+    <kdb> keyboard Markup
+    <samp> making up output of computer program
+    -->
+
+    <pre><code>var para = document.querySelector('p');
+    para.onclick = function() {
+      alert('Owww, stop poking me!');
+    }</code>
+    <samp>PING mozilla.org (63.245.215.20): 56 data bytes</samp>
+    </pre>
+
+    <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+
+    <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+    <!-- Time Date Markup -->
+    <p><time datetime="2018-08-01">01 August 2018</time></p>
+    <p><time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time></p>
+
+
+
     <!-- Javascript files go HERE -->
     <script src="scripts/main.js">
     </script>
-
-  </body>
 </html>

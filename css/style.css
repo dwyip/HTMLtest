@@ -1,3 +1,4 @@
+
 /* Red color for paragraph font
 
  p, img[src] {
@@ -6,11 +7,11 @@
   border: 1px solid black;
 }
 */
-
+/*edittest*/
 /*Editing font size and position */
   html{
     font-size: 10px;
-    font-family: 'Charm', cursive;
+    font-family: 'Thasadith', sans-serif;
   }
 
   h1{

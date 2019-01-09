@@ -1,3 +1,4 @@
+
 /*//Creating a variable
 var myHead = document.querySelector('h1');
 myHead.textContent = 'Hello Sun & Rain'
@@ -30,11 +31,12 @@ function setUserName(){
   myHeading.textContent = 'Mozza is yum, ' + myName;
 }
 
+//CHeck if name data exist, else prompt user for name
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   var storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+  myHeading.textContent = 'Pizza Mozza is cool, ' + storedName;
 }
 
 myButton.onclick = function() {
